@@ -83,6 +83,6 @@ def organize_schools(schools)
   schools_by_city
 end
 
-        
-    
+
+
 end
