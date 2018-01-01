@@ -63,3 +63,12 @@ def find_cool(array)
   end
   cool_hashes
 end
+
+def oraganize_schools(schools)
+  schools.each do |school|
+    binding.pry
+    school.each do |key, data|
+      binding.pry
+    end
+  end
+end
