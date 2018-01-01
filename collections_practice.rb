@@ -65,10 +65,15 @@ def find_cool(array)
 end
 
 def organize_schools(schools)
-  schools.each do |school|
+  locations = []
+  schools.each do |key,value|
     binding.pry
-    school.each do |key, data|
-      binding.pry
-    end
+    locations.push(value[location])
+    binding.pry
   end
+  binding.pry
+  locations.uniq!
+end
+    
+    
 end
