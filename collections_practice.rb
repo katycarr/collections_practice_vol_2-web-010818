@@ -74,6 +74,3 @@ def organize_schools(schools)
   binding.pry
   locations.uniq!
 end
-
-
-end
