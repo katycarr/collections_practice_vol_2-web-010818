@@ -51,3 +51,15 @@ def merge_data(keys, data)
   end
   new_data
 end
+
+def find_cool(array)
+  cool_hashes = []
+  array.each do |person|
+    person.each do |key, value|
+      if value == "cool"
+        cool_hashes.push(person)
+      end
+    end
+  end
+  cool_hashes
+end
