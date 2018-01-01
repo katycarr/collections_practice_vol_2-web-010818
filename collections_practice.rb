@@ -64,7 +64,7 @@ def find_cool(array)
   cool_hashes
 end
 
-def oraganize_schools(schools)
+def organize_schools(schools)
   schools.each do |school|
     binding.pry
     school.each do |key, data|
