@@ -44,7 +44,8 @@ def merge_data(keys, data)
     element.each do |key, value|
       if data[0].keys.include?(value)
         data[0][key] == value
-        
+        binding.pry
+
       end
     end
   end
