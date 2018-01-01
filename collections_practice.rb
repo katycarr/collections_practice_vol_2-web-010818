@@ -41,12 +41,10 @@ end
 
 def merge_data(keys, data)
   keys.each do |element|
-    binding.pry
     element.each do |key, value|
-      binding.pry
-      if data.include?(value)
-        binding.pry
-        data[key] == value
+      if data[0].keys.include?(value)
+        data[0][key] == value
+        
       end
     end
   end
