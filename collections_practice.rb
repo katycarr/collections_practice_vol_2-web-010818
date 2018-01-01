@@ -67,10 +67,22 @@ end
 def organize_schools(schools)
   locations = []
   schools.each do |key,value|
-    binding.pry
     locations.push(value[:location])
-    binding.pry
   end
-  binding.pry
   locations.uniq!
+  schools_by_city = {}
+  locations.each do |city|
+    city_array = []
+    schools.each do |key, value|
+      if value[:location] == city
+        city_array.push(key)
+      end
+    end
+    schools_by_city[city] = city_array
+  end
+  schools_by_city
+end
+
+        
+    
 end
