@@ -44,6 +44,7 @@ def merge_data(keys, data)
   keys.each do |element|
     element.each do |key, value|
       if data[0].keys.include?(value)
+        binding.pry
         new_hash = element.merge(value)
         new_data.push(new_hash)
       end
