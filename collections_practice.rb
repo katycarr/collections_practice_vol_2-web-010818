@@ -68,7 +68,7 @@ def organize_schools(schools)
   locations = []
   schools.each do |key,value|
     binding.pry
-    locations.push(value[location])
+    locations.push(value[:location])
     binding.pry
   end
   binding.pry
